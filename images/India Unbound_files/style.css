@@ -1,0 +1,595 @@
+@font-face {
+    font-family: samsungone;
+    src: url(../samsungone/SamsungOne-400.ttf);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: samsungone;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(226, 226, 226);
+    overflow-x: hidden;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+#Navbar {
+    width: 100vw;
+
+}
+
+#homeicon {
+    height: 30px;
+    width: 30px;
+    margin-right: 4px;
+}
+
+.upper-navbar-font {
+    font-size: 11px;
+    color: white;
+}
+
+.lower-navbar-font {
+    font-size: 10px;
+    color: rgb(231, 231, 231);
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0);
+    height: 75px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+#headerelement {
+    display: flex;
+    flex-direction: row;
+}
+
+.headerelement-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar ul {
+    width: 100%;
+    text-align: left;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: end;
+    padding: 22px 20px 0 0;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    text-decoration: none;
+    display: flex;
+}
+
+select {
+    height: 30px;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    /* border-radius: 3px; */
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+option {
+    color: black;
+}
+
+picture {
+    position: static;
+    z-index: auto;
+}
+
+.navtext {
+    color: black;
+}
+
+.body-background-image {
+    background-image: url(../images/introbackground.jpg);
+    /* background-size: cover; */
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+    /* background-color: aqua; */
+    height: 594px;
+    width: 100%;
+    margin: 0 0 20px 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.intro-background {
+    position: relative;
+    top: 100px;
+    /* padding: 70px 0 0 0; */
+    margin: 0 50px 0 50px;
+    background-color: rgba(82, 82, 82, 0.699);
+    border-radius: 10px;
+    height: 450px;
+    color: white;
+    text-align: center;
+    padding: 30px 0 0 0;
+    /* -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(0); */
+    /* filter: blur(5px); */
+}
+
+/* .intro-background_blur {
+    position: relative;
+    background-color: rgba(82, 82, 82, 0.699);
+    width: 1447px;
+    height: 460px;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+} */
+
+.intro-background-outer-text {
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #f3f3f3;
+    padding: 20px 20px 0 20px;
+
+}
+
+.expolre_india_button {
+    position: relative;
+    top: 70px;
+    color: white;
+    font-size: 22px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    background-color: #092C40;
+    transition-duration: 0.2s;
+}
+
+.expolre_india_button:hover {
+    background-color: white;
+    color: #092C40;
+    font-weight: 900;
+    /* border-radius: 10px; */
+}
+.grab_ticket_button{
+    color: white;
+    font-size: 22px;
+    margin-top: 20px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    background-color: #092C40;
+    transition-duration: 0.2s;
+}
+
+.grab_ticket_button:hover {
+    background-color: white;
+    color: #092C40;
+    font-weight: 900;
+    /* border-radius: 10px; */
+}
+.page-logo {
+    height: 60px;
+    /* position: relative;
+    left: 30px;
+    top: 5px; */
+}
+
+.page-logo-link {
+    /* width: 50%; */
+    position: relative;
+    left: 40px;
+    top: 10px;
+}
+
+.india-unbound-text {
+    font-weight: 900;
+    position: relative;
+    left: 46px;
+    top: 11px;
+    font-size: 20px;
+    color: white;
+}
+
+.india-text:hover {
+    color: #F79A13;
+}
+
+.unbound-text:hover {
+    color: #5AC479;
+}
+
+/* #body-background-image{
+    padding-top: 0%;
+    width: 1349px;
+    height: 594px;
+    width: 98.6vw;
+}*/
+.collection-heading {
+    font-size: xx-large;
+    font-weight: 900;
+    text-align: center;
+}
+
+.places-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* gap: 20px; */
+}
+
+.places {
+    border-radius: 10px;
+    margin: 0 10px 0 10px;
+    background-color: white;
+    padding: 10px 10px 20px 10px;
+}
+
+#beaches-container {
+    background-image: url(../images/beaches.jpg);
+    background-size: cover;
+    /* background: linear-gradient(to top, rgba(14, 14, 14, 0.5), transparent); */
+}
+
+#hill-station-container {
+    background-image: url(../images/hill\ station1.jpg);
+    background-size: cover;
+}
+
+#green-forest-container {
+    background-image: url(../images/green\ forest1.jpg);
+    background-size: cover;
+}
+
+#heritage-container {
+    background-image: url(../images/heritage1.jpg);
+    background-size: cover;
+}
+
+#pilgrimage-container {
+    background-image: url(../images/pilgrimage1.jpg);
+    background-size: cover;
+}
+
+#relaxation-container {
+    background-image: url(../images/relaxation.jpg);
+    background-size: cover;
+}
+
+.gradient-div {
+    height: 230px;
+    width: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top, rgba(14, 14, 14, 0.6), transparent);
+}
+
+.places-container {
+    /* background: linear-gradient(to top, rgba(14, 14, 14, 0.5), transparent); */
+    height: 230px;
+    width: 200px;
+    border-radius: 10px;
+    transition: 0.1s;
+
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.places-container:hover {
+    scale: 1.02;
+}
+
+.space-div {
+    height: 70%;
+    width: 0%;
+}
+
+.places-container-heading {
+    margin-left: 6px;
+}
+
+.places-container-upper-heading {
+    background-color: #ffffff;
+    padding: 3px;
+    border-radius: 3px;
+    font-weight: 700;
+    color: #2e2e2e;
+    font-size: small;
+}
+
+.places-container-lower-heading {
+    margin: 8px 0 8px 4px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+
+}
+
+fieldset {
+    border: none;
+    background: transparent;
+}
+
+.exploring_india_background,.grab_ticket_button_background {
+
+    border-radius: 10px;
+    margin: 0 10px 15px 10px;
+    background-color: white;
+    padding: 10px 10px 20px 10px;
+}
+.grab_ticket_button_background{
+    display: flex;
+    flex-direction: row;
+}
+.exploring_india {
+    font-size: xx-large;
+    font-weight: 900;
+    text-align: center;
+    animation: appear_right linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes appear_right {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.exploring_india_map {
+    justify-content: center;
+    text-align: center;
+    animation: appear_left linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes appear_left {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* .anchor_directions{
+    
+} */
+.compass {
+
+    height: 200px;
+    display: inline-block;
+}
+
+.anchor_directions_north {
+    display: inline-block;
+    font-size: 30px;
+    color: rgb(39, 39, 39);
+    transition-duration: 0.2s;
+    width: 180px;
+}
+
+.anchor_directions_north:hover {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    border-radius: 15px;
+}
+
+.anchor_directions_West {
+    font-size: 20px;
+    display: inline-block;
+    color: black;
+    position: relative;
+    bottom: 120px;
+    right: 60px;
+    transition-duration: 0.2s;
+    width: 110px;
+}
+
+.anchor_directions_West:hover {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    border-radius: 10px;
+}
+
+.anchor_directions_East {
+    font-size: 20px;
+    display: inline-block;
+    color: black;
+    position: relative;
+    bottom: 120px;
+    left: 155px;
+    transition-duration: 0.2s;
+    width: 110px;
+}
+
+.anchor_directions_East:hover {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    border-radius: 10px;
+}
+
+.anchor_directions_South {
+    font-size: 20px;
+    display: inline-block;
+    color: black;
+    position: relative;
+    right: 113px;
+    transition-duration: 0.2s;
+    padding: 0 4px;
+    width: 110px;
+}
+
+.anchor_directions_South:hover {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    border-radius: 10px;
+}
+.grab_ticket_text{
+    width: 50%;
+}
+.ticket_image_div{
+    background-image: url("indiaunbound/images/luggage.jpg");
+    background-size: cover;
+}
+.booking_list{
+    margin: 30px 0 50px 0;
+}
+.booking_list_div{
+    margin-bottom: 8px;
+}
+
+.booking_list_logo{
+    width: 30px;
+    margin-right: 7px;
+    position: relative;
+    top: 8px;
+}
+.ticket_title{
+    font-weight:100 ;
+    font-size: 30px;
+    margin: 0 0 50px 0;
+}
+/* footer css */
+#back-to-top-div {
+    height: 28px;
+    padding-top: 4px;
+    text-align: center;
+    background-color: #363636;
+}
+
+#back-to-top-div:hover {
+    background-color: #3a3a3a;
+    cursor: pointer;
+}
+
+.upper-footer-div {
+    display: flex;
+
+}
+
+.footer-categories,
+.footer-contactus {
+    width: 50%;
+    justify-content: center;
+    text-align: left;
+    padding-left: 15%;
+}
+
+#footer-div {
+    /* text-align: center; */
+    /* height: 90px; */
+    padding: 2% 10% 3% 10%;
+    background-color: #2e2e2e;
+    color: white;
+}
+
+.footer-categories ul {
+    list-style-type: none;
+}
+
+.Categories-item,
+.Categories-contact,
+.back-to-top {
+    text-decoration: none;
+    color: white;
+}
+
+.Categories-item:hover {
+    background-color: rgba(14, 14, 14, 0.281);
+}
+
+.Categories-contact:hover {
+    background-color: rgba(14, 14, 14, 0.281);
+}
+
+.logo-bg-link {
+    width: min-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-logo-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.india-unbound-text-footer {
+    font-weight: 900;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h4 {
+    margin-bottom: 4px;
+}
+
+.contact-logo {
+    position: relative;
+    top: 4px;
+    margin-right: 4px;
+    height: 20px;
+}
+
+.footer-hr {
+    text-align: center;
+}
+
+.lower-footer-div {
+
+    text-align: center;
+    justify-content: center;
+}
+
+.followus-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.followus-elements-icons {
+    height: 30px;
+}

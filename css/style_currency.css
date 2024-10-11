@@ -1,0 +1,115 @@
+@font-face{
+    font-family: samsungone;
+    src:url(../samsungone/SamsungOne-400.ttf);
+    
+}
+*{
+    font-family: samsungone;
+    scroll-behavior: smooth;
+}
+body{ 
+    margin: 0;
+}
+header{
+    height: 75px;
+}
+main{
+    margin: 40px 20px 0 20px;
+    text-align: center;
+}
+
+h1{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+/*   
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    margin-left: 11px;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    
+    width: 89%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    resize: vertical;   
+}
+
+
+.button_pass {
+    font-size: 16px;
+    background-color: #4CAF50; 
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 9
+    
+    
+    
+    x;
+    cursor: pointer;
+}
+
+.notification, .notification_pass {
+    background-color: #f44336; 
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}
+
+.hidden {
+    display: none;
+} */
+input, textarea {
+    
+    width: 20%;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+.button_div{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+
+}
+.convert_button{
+    color: white;
+    background-color: #4caf50;
+    border-radius: 7px;
+    padding: 5px;
+}
+.us_button{
+    background-image: url(../images/america_flag2.jpg);
+    background-size: cover;
+    color: black;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+.euro_button{
+    background-image: url(../images/euro_flag.jpg);
+    background-size: cover;
+
+}

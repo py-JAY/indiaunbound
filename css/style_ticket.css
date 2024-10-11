@@ -1,0 +1,217 @@
+@font-face {
+    font-family: samsungone;
+    src: url(../samsungone/SamsungOne-400.ttf);
+
+}
+
+* {
+    /* margin: 0;
+    padding: 0; */
+    font-family: samsungone;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    /* background-color: rgb(226, 226, 226); */
+    background-image: url(../images/ticket_booking_background.jpg);  
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+  
+}
+main{
+    margin: 0 20px 0 20px;
+}
+
+header {
+    height: 75px;
+}
+.heading {
+    font-size: xx-large;
+    font-weight: 900;
+    text-align: center;
+    transition: .1s;
+}
+
+.heading:hover {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.background {
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking-form,.booking-form_blur {
+    /* background-color: dimgrey; */
+    backdrop-filter: blur(15px);
+    padding: 15px 20px 20px 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 80%;
+    margin: 10px auto 0 auto;
+}
+.booking-form_blur{
+    background-color: grey;
+        filter: blur(5px);
+
+}
+
+.booking-form h2 {
+    text-align: center;
+}
+
+.booking-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form input {
+    /* width: 90%; */
+    padding: 8px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form_selector {
+    background-color: white;
+    color: black;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#return-date {
+    width: 96.5%;
+}
+
+.booking-form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.booking-form button:hover {
+    background-color: #45a049;
+    /* transform: translateY(-5px); */
+}
+form label{
+    margin: 5px 0 5px 0;
+}
+
+/* yaha se selct city wala */
+
+.options {
+    padding: 0 7px 0 0;
+}
+
+/* .wrapper{
+    width: 370px;
+    margin: 130px auto 0;
+} */
+.select_btn,
+.options li {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.select_btn {
+    height: 35px;
+    font-size: 14px;
+    padding: 0 10px;
+    border-radius: 7px;
+    background: #fff;
+    justify-content: space-between;
+}
+
+.select_btn i {
+    font-size: 31px;
+    transition: transform 0.3s linear;
+}
+
+.wrapper.active .select_btn i {
+    transform: rotate(180deg);
+}
+
+.content {
+    display: none;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 7px;
+    background: #fff;
+}
+
+.wrapper.active .content {
+    display: block;
+}
+
+.content .search {
+    position: relative;
+}
+
+.search i {
+    left: 15px;
+    color: #999;
+    font-size: 20px;
+    line-height: 53px;
+    position: absolute;
+}
+
+.search input {
+    height: 53px;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 0 15px 0 43px;
+    border: 1px solid #b3b3b3;
+}
+
+.content .options {
+    margin-top: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.options::-webkit-scrollbar {
+    width: 7px;
+}
+
+.options::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 25px;
+}
+
+.options::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 25px;
+}
+
+.options li {
+    height: 30px;
+    padding: 0 13px;
+    border-radius: 5px;
+}
+
+.options li:hover,
+li.selected {
+    background: #f2f2f2;
+}
+input[type="text"]:focus,input[type="number"]:focus,input[type="email"]:focus,textarea:focus {
+    border-color: #ffcc00;
+    outline: none;
+}
